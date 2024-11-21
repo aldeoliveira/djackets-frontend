@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import ProductView from '@/views/ProductView.vue'
 import CategoryView from '@/views/CategoryView.vue'
 import Search from '@/views/Search.vue'
+import Cart from '@/views/Cart.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     component: Search
   },
   {
+    path: '/cart/',
+    name: 'Cart',
+    component: Cart
+  },
+  {
     path: '/:category_slug/:product_slug/',
     name: 'Product',
     component: ProductView
@@ -32,7 +38,7 @@ const routes = [
     path: '/:category_slug/',
     name: 'Category',
     component: CategoryView
-  }
+  },
 ]
 
 const router = createRouter({
