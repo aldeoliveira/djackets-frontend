@@ -53,6 +53,7 @@ export default {
   },
   mounted() {
     this.cart = this.$store.state.cart
+    document.title = 'Cart | Djackets'
   },
   methods: {
     removeFromCart(item) {
